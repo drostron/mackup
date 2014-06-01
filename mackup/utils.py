@@ -215,6 +215,14 @@ def parse_cmdline_args():
                                  constants.LIST_MODE],
                         help=help_msg)
 
+    # Add optional args
+    parser.add_argument('-d', '--dry-run', dest='dry_run',
+                        action='store_const', const=True, default=False,
+                        help='show steps without executing')
+    parser.add_argument('-v', '--verbose', dest='verbose',
+                        action='store_const', const=True, default=False,
+                        help='show more details')
+
     # Parse the command line and return the parsed options
     return parser.parse_args()
 

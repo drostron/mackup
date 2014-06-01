@@ -2,6 +2,7 @@
 
 ## WIP
 
+- Added dry-run and verbose options (via @yastero)
 - Limit .gem folder backup for Ruby, including credentials file only (via
   @ashchan)
 - Support for PostgreSQL (via @bashu)
